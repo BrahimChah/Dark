@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+$white: #ffffff;
+$dark: #151823;
+$color-blue : linear-gradient(141deg, rgba(136,178,249,1) 0%, rgba(7,21,74,1) 100%); 
+$color-orange : linear-gradient(141deg, rgba(191,90,191,1) 0%, rgba(255,181,5,1) 100%);
+
+.body-light {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: $white;
+    transition: 200ms;
+}
+.body-dark {
+    @extend .body-light;
+    background-color: $dark;
+    transition: 200ms;
+}
+
+.h1-light {
+  font-size: 5em;
+  text-align: center;
+  padding-top: 10%;
+	background: $color-blue;
+  background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  transition: 600ms;
+}
+.h1-dark {
+  @extend .h1-light;
+  background : $color-orange;
+  background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  transition: 600ms;
+}
+.links-light {
+  display: flex;
+  justify-content: center;
+  gap : 20px;  
+  
+  a {
+    text-decoration: none;
+    color : $dark;
+    font-weight: bold;
+    transition: 600ms;
+  }
+}
+
+.links-dark {
+  @extend .links-light;
+   a {
+     color : $white;
+     transition: 600ms;
+   }
+}
+
+

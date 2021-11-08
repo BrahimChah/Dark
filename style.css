@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+.body-light, .body-dark {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-color: #ffffff;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.body-dark {
+  background-color: #151823;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.h1-light, .h1-dark {
+  font-size: 5em;
+  text-align: center;
+  padding-top: 10%;
+  background: linear-gradient(141deg, #88b2f9 0%, #07154a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+
+.h1-dark {
+  background: linear-gradient(141deg, #bf5abf 0%, #ffb505 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+
+.links-light, .links-dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.links-light a, .links-dark a {
+  text-decoration: none;
+  color: #151823;
+  font-weight: bold;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+
+.links-dark a {
+  color: #ffffff;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+/*# sourceMappingURL=style.css.map */
